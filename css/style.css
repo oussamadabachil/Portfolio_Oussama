@@ -1,0 +1,214 @@
+/* reset css */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Just+Another+Hand&display=swap');
+html{
+    font-size: 62.5%; 
+/* 16px * 62,5 10.00rem */
+}
+body{
+    /*
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;*/
+    
+  font: 1.6rem sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+
+
+  margin: 0;
+}
+*{
+    box-sizing: border-box; /* 100px largeur + 10px padding + 1px border */
+}
+@font-face {
+    font-family: Apple;
+    src: url(../FontsFree-Net-SFProText-Regular.ttf);
+}
+ul, 
+ol, 
+p,
+button,
+figure, 
+blockquote, h1, h2, h3, address{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+}
+button{
+    background: transparent;
+    font-size: inherit;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.material-icons{
+    vertical-align: .5rem;
+    font-size: 3rem;
+}
+
+@keyframes scaleUp {
+    from{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    }
+    to{
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.4);
+    }
+}
+
+header>nav{
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    align-items: center;    
+    z-index: 3;
+
+    height:4.4rem;
+    background-color:rgba(0, 0, 0, 0.8);
+    
+}
+header>nav>ul{
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+
+
+
+header>nav>ul>li>a{
+    color: #f5f5f7;
+}
+header>nav>ul>li{
+    text-align: center;
+}
+
+
+main>section>h1{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -.005rem;
+    font-size: 5.6rem;
+    margin-top: 15rem;
+    font-family: Apple;
+}
+main>section>h2{
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: -.005rem;
+    font-size: 3.6rem;
+     font-family: Apple;
+}
+main>section>img{
+    display: block;
+    max-width: 80rem;
+    margin: 2rem auto;
+}
+
+main>section{
+    display: block;
+    position: relative;
+}
+.inside_pc{
+    align-items: center;
+    width: 95%;
+    margin: 3rem auto 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.inside_pc>p{
+        padding: 1rem;
+        text-align: center;
+}
+.inside_pc>div{
+    height: 50rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.overflow_scroll>div{
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 32rem;
+    height: 45rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: .9rem;
+
+}
+.overflow_scroll>div>h3{
+    font-family: Apple;
+    text-transform:capitalize;
+    padding: 2rem;
+    color:white;
+    font-size: 2.6rem;
+}
+.overflow_scroll>div:nth-child(2)>h3{
+    font-family: Apple;
+    padding: 2rem;
+    color:white;
+    white-space: nowrap;
+    font-size: 2.2rem;}
+.overflow_scroll>div:first-child{
+ margin-left: 2rem;  
+ background-color: #FA9B3C;
+}
+.overflow_scroll>div:nth-child(3){
+    background-color: #787BC5;
+   }
+   .overflow_scroll>div:nth-child(4){
+    background-color: #ec1515;
+   }
+
+
+@media screen and (max-width:50rem){
+    .inside_pc{
+        align-items: center;
+        width: 95%;
+        margin: 3rem auto 3rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+main>section>h1{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -.005rem;
+    font-size: 3.6rem;
+    margin-top: 15rem;
+    font-family: Apple;
+}
+main>section>h2{
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: -.005rem;
+    font-size: 2.6rem;
+    font-family: Apple;
+    padding-bottom: 1rem;
+}
+}
