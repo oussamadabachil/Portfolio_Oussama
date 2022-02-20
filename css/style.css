@@ -57,6 +57,9 @@ img{
     vertical-align: .5rem;
     font-size: 3rem;
 }
+header>nav>ul>.desk_li{
+    display: block;
+}
 
 @keyframes scaleUp {
     from{
@@ -95,13 +98,17 @@ header>nav>ul{
     grid-template-columns: repeat(5,1fr);
     
 }
+.menu_toggle{
+    display: none;
+}
+header>nav>ul>.icone{
+    display: none;
+}
 
-
-
-header>nav>ul>li>a{
+header>nav>ul>.desk_li>a{
     color: #f5f5f7;
 }
-header>nav>ul>li{
+header>nav>ul>.desk_li{
     text-align: center;
 }
 
@@ -185,8 +192,29 @@ main>section{
     background-color: #ec1515;
    }
 
-
+  header>nav>ul>.icone{
+    color: white;
+    display: none;
+}
+header>nav>ul>.desk_li{
+    display: block;
+}
 @media screen and (max-width:50rem){
+    header>nav>ul>.icone{
+        display: block;
+    }
+    header>nav>ul>.icone>a{
+        font-size: 1.7rem;
+        color: white;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%,-50%);
+    }
+    header>nav>ul>.desk_li{
+        display: none;
+    }
     .inside_pc{
         align-items: center;
         width: 95%;
@@ -195,6 +223,45 @@ main>section{
         grid-template-columns: repeat(1,1fr);
     }
 
+    header>nav>.menu_toggle{
+        display: block;
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.8);
+        transition: all .3s;
+
+        height: 100vh;
+        top: -100vh;
+    }
+    header>nav>.menu_toggled{
+        display: block;
+        z-index: 3;
+        position: fixed;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.8);
+        transition: all .3s;
+        height: 100vh;
+        top: 4.4rem;
+    }
+    header>nav>.menu_toggle>ul>li{
+        font-size: 1.6rem;
+        padding: .5rem;
+        border-bottom: .05rem solid rgba(255, 255, 255, 0.561);
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    header>nav>.menu_toggle>ul>li>a{
+        color: white;
+    }
+    header>nav>.menu_toggle>ul{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
 main>section>h1{
     text-align: center;
     font-weight: 600;

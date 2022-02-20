@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded",()=>{
+/*document.addEventListener("DOMContentLoaded",()=>{
     let title =document.querySelector(".title")
     let projetsDiv = document.querySelector(".mesprojetsdiv")
     let ha = document.querySelector(".title h1")
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         hc.textContent = "MES PROJETS";
         hc.classList.toggle("hczoom")
         hc.classList.add("title2h1tr")
-       /* projetsDiv.classList.remove("aproposdiv_show")*/
+       /* projetsDiv.classList.remove("aproposdiv_show")
         projetsDiv.classList.toggle("mesprojetsdiv_show")
 
     })
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         hc.textContent = "À propos";
         hc.classList.toggle("hczoom")
         hc.classList.add("title2h1tr")
-       /* aproDIV.classList.remove("aproposdiv_show")*/
+       /* aproDIV.classList.remove("aproposdiv_show")
 
         aproDIV.classList.toggle("aproposdiv_show")
 
@@ -61,4 +61,16 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 
+})
+*/
+
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+    let btn_menu = document.querySelector(".icone")
+    let menu_toggle = document.querySelector(".menu_toggle")
+
+    btn_menu.addEventListener("click",()=>{
+        menu_toggle.classList.toggle("menu_toggled")
+    })
 })
