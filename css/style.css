@@ -288,7 +288,8 @@ main>section>h2{
     align-items: center;
     justify-content: center;
     width: 100vw;
-    margin-top: -2.5rem;
+    margin-top: -2.7rem;
+    margin-left: 2rem;
 }
 .demo .menu-icon {
     transform: scale(1.5);
