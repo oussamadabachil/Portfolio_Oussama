@@ -67,10 +67,20 @@
 
 
 document.addEventListener("DOMContentLoaded",()=>{
+    let html_overflow = document.querySelector("HTML")
     let btn_menu = document.querySelector(".icone")
     let menu_toggle = document.querySelector(".menu_toggle")
-
+    let counter = 1
     btn_menu.addEventListener("click",()=>{
+        counter+=1
+        if(counter%2==0){
+            html_overflow.setAttribute("style","overflow-y:hidden")
+
+        }else{
+            html_overflow.setAttribute("style","overflow-y:scroll")
+
+        }
+
         menu_toggle.classList.toggle("menu_toggled")
     })
 })
