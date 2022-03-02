@@ -1,0 +1,308 @@
+#footer-bottom{
+  display: none    
+}
+.row .carrier-extra-content{
+    display: none;
+}
+
+#st_mo_ma_84,#st_mo_ma_105,#st_mo_ma_99,#st_mo_ma_100,#st_mo_ma_69,#st_mo_ma_106,#st_mo_ma_Z6,#st_mo_ma_92,#st_mo_ma_110,#st_mo_ma_70,#st_mo_ma_74
+,#st_mo_ma_51
+,#st_mo_ma_52,#st_mo_ma_111,#st_mo_ma_69,#st_mo_ma_26{
+
+    font-size:.9rem;
+
+
+}
+#st_mo_menu_10,#st_mo_menu_11,#st_mo_menu_13,#st_mo_menu_48,#st_mo_menu_73,#st_mo_menu_118{
+    border: none;
+}
+
+#st_mo_ma_10,#st_mo_ma_11,#st_mo_ma_73,#st_mo_ma_48,#st_mo_ma_13,#st_mo_menu_118{
+    font-size: 1.2rem;
+    
+}
+
+/*
+#st_mo_menu_118{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)
+}
+*/
+.st-menu-title{
+    font-size: 1.7rem;
+    color:black;
+    background: white;
+    text-transform:uppercase;
+    
+}
+
+.fto-angle-double-left,.fto-angle-double-right{
+    color: black;
+    font-size: 2rem;
+}
+#st_swiper_1{
+ margin-top: -12rem;
+    
+    
+}
+#side_stmobilemenu,#side_products_cart{
+    width: 100%;
+}
+
+#swiper_container_4{
+    margin-top: -6.3rem;
+}
+.cart_text{
+    background-color: transparent;
+}
+
+
+#switch_left_column_wrap{
+   display: none; 
+}
+
+.marquee-deskbw{
+    color:black;font-size:1.6rem;font-family:'Cinzel', 'Bellota Text', cursive;}
+    
+.black_red{color: red;}
+
+
+.waterproof{
+    
+    background-color:white;
+}
+.waterproof>#pab{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+
+.oussama{
+    color: red;
+}
+
+.diane_bw{
+    position: relative;
+}
+.diane_bw:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+#st_ma_162,#st_ma_163{
+    
+    background-color: white;
+}
+.hover_fly_btn_inner{
+    position: relative;
+}
+
+.fto-search-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+}
+
+
+.fto-heart-4{
+    color: black;
+ padding-left:.2rem;
+}
+.quick-view{
+    position:absolute;top:-2.5rem;width:2rem;left:0.5rem;border-radius:100%;
+    
+}
+
+
+.add_to_love{
+      position:absolute;top:-2.5rem;width:2rem;right:0.5rem;border-radius:100%;
+}
+@media screen and (max-width: 600px){
+   .waterproof>#pab{
+    color: black;
+    text-align: center;
+    line-height: 3rem;
+    font-size: .8rem;
+    width:100%;
+}
+
+.myacount_dashbord_list>.list-group-item{
+    display:block;
+    width:100%;
+}
+}
+
+
+.color{
+    border-radius: 100%;
+    
+}
+
+#cart-subtotal-products>.value.price{
+    font-size: 1.6rem;
+}
+
+.product-price-and-shipping>.price{
+    font-size: 1.5rem;
+}
+.quick-view.hover_fly_btn.btn-spin {
+background-color:transparent;
+border: none;
+    
+}
+
+@media screen and (min-width : 1356px) {
+ #top_extra_container{
+    position:absolute;top:-4.3rem;left:50%;width:100%;transform:translate(-50%,0%);
+
+}
+ .recherche_popup_show {
+        position: absolute;
+        top: 5.83rem;
+        transition: all 0.3s;
+        opacity: 1;
+        width: 60rem;
+        right: -1rem;
+        z-index: 100000;
+        background-color: #fff;
+        visibility: visible;
+    }
+}
+/*
+.fto-heart-4.icon_btn::before{
+
+      background-image: url('https://hollyghost.fr/img/cms/icones_menu/loupe_ico_dev.jpg');
+    background-size:25px 25px;
+    
+    
+background-position: bottom -0px right -21px;    
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:"";
+
+}
+*/
+.flex_box{
+    display: block;
+}
+#st_ma_84,#st_ma_26,#st_ma_92{
+    color: #936801 !important;
+}
+
+
+.fto-search-1.icon_btn::before{
+    font-size: 1.2rem
+
+    
+}
+.fto-heart-4.icon_btn::before{
+margin-left: -.2rem;
+    font-size: 1.2rem
+
+}
+
+.test_menu_test{
+    background-color: red;
+    width:100%;
+    display: grid;
+
+}
+.div_menu_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    grid-gap: 1rem;
+}
+.div_menu_grid_grid{
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+        grid-gap: 1rem;
+
+}
+.div_menu_grid_grid>li>a>img{
+    width: 6rem;
+    border-radius: 100%;
+    height:6em
+}
+.div_menu_grid>li>a>img{
+    width: 100%;
+    border-radius: 100%;
+    
+
+
+    
+}
+
+.div_menu_grid>li>p,.div_menu_grid_grid>li>p{
+    text-align:center;
+    font-size: .7rem;
+}
+
+
+
+
+
+.round_corner_relative{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+}
+
+.round_corner_relative>li{
+    color: black;
+    font-size: 2rem;
+}
+.round_corner_relative>li>a>img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.promo_noel_chaussure{
+       background-image: url('https://hollyghost.fr/img/cms/MENUPC/remisepic_chaussure.jpg');
+       width: 10rem;
+       height: 10rem;
+       background-size: cover;
+    border-radius: 100%;
+    
+}
+
+.nospieces{
+    font-size: 1.2rem;
+    color: #936801;
+        transition: all .2s
+
+}
+
+
+
+.grid_img_shoes>a{
+display:block}
+.grid_img_shoes>a:hover{
+  transform: scale(1.2);
+        transition: all .3s;
+
+}
+.nospieces:hover{
+    color: #FFC27F;
+    transition: all .2s
+}
+.add_to_love.hover_fly_btn.btn-spin.pro_right_item{
+    background-color: transparent !important;
+}
+
+.btn.btn-search.btn-no-padding.btn-spin.search_widget_btn.link_color.icon_btn>.icon_text{
+        display: none;
+}
+
