@@ -224,6 +224,10 @@ header>nav>ul>.desk_li{
     height: auto;
 }
 @media screen and (max-width:50rem){
+    .second_block{
+        height: 40vh;
+    }
+    
     header>nav>ul>.icone{
         display: block;
     }
@@ -252,12 +256,20 @@ header>nav>ul>.desk_li{
         z-index: 3;
         position: fixed;
         width: 100%;
-        background-color:#1D1D1F;
-        transition: all .3s;
+        background-color:#3A3A3A;
+        transition: all .6s;
         visibility: hidden;
-        opacity: 0;
-        height: 5vh;
+        opacity: 1;
+        height: 0vh;
         top: 4.4rem;
+    }
+    header>nav>.menu_toggle>ul>li{
+        opacity: 0;
+        transition: all .6s;
+    }
+    header>nav>.menu_toggled>ul>li{
+        opacity: 1;
+        transition: all .3s;
     }
     header>nav>.menu_toggled{
         visibility: visible;
@@ -266,8 +278,8 @@ header>nav>ul>.desk_li{
         z-index: 1;
         position: fixed;
         width: 100%;
-        background-color:#1D1D1F;
-        transition: all .3s;
+        background-color:#3A3A3A;
+        transition: all .6s;
         height: 100vh;
         top: 4.4rem;
     }
@@ -317,9 +329,12 @@ main>.second_block>h2{
     text-align: center;
     font-weight: 300;
     letter-spacing: -.05rem;
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 1rem;
+}
+main>.second_block>ul>li>a{
+    font-size: 1.6rem;
 }
 }
 
