@@ -413,3 +413,152 @@ main>.second_block>ul>li>a{
         width: 12px;
    }
 }
+
+.fade-in-image {
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  .fade-out {
+    animation: fadeOut ease .8s;
+    -webkit-animation: fadeOut ease  .8s;
+    -moz-animation: fadeOut ease  .8s;
+    -o-animation: fadeOut ease  .8s;
+    -ms-animation: fadeOut ease  .8s;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+  }
+}
+
+
+.grid_image_css{
+    padding: 1rem;
+
+    display: grid;
+    overflow-x: scroll;
+    grid-template-columns: repeat(6,1fr);
+    width: 95%;
+    grid-gap: 3rem;
+    margin: 3rem auto;
+}
+.grid_image_css>div>h2{
+    text-align: center;
+}
+
+.grid_image_css>div{
+    height: auto;
+    vertical-align: middle;
+    align-items: center;
+    width: 60rem;
+    border-radius: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.grid_image_css>div>div{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns:repeat(2,1fr);
+}
+.grid_image_css>div>div>img{
+    display: block;
+    border-radius: .5rem;
+    width: 90%;
+    margin: 0 auto 1rem;
+
+}
+.grid_image_css>div>div>p{
+    padding: 1rem;
+}
+.projets_a>.grid_pictures{
+    width: 100%;
+    background-color: rgba(24, 18, 18, 0.685);
+
+    margin: 2rem auto;
+    grid-gap: 2rem;
+    height: 100vh;
+}
+.projets_a>.grid_pictures>div{
+    border-radius: .5rem;
+}
+.projets_a>img{
+    width: 100%;
+    display: block;
+    margin-top: -23rem;
+    background-color: #222;
+}
+.projets_a>h1{
+    color: white;
+    display: block;
+    background-color: #222;
+
+    margin-top:4rem;
+    width: 100%;
+
+}

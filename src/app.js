@@ -67,6 +67,13 @@
 
 
 document.addEventListener("DOMContentLoaded",()=>{
+    var y = window.scrollY;
+    let animaFiO = document.querySelector("#anima")
+    let animbFiO =  document.querySelector("#animb")
+    let animcFiO =  document.querySelector("#animc")
+    let animdFiO =  document.querySelector("#animd")
+    let animeFiO =  document.querySelector("#anime")
+
     let html_overflow = document.querySelector("HTML")
     let btn_menu = document.querySelector(".icone")
     let menu_toggle = document.querySelector(".menu_toggle")
@@ -83,4 +90,31 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         menu_toggle.classList.toggle("menu_toggled")
     })
+    animaFiO.classList.add("fade-in-image")
+    animbFiO.classList.add("fade-in-image")
+    animcFiO.style.opacity=0;
+    animdFiO.style.opacity=0;
+
+
+    window.addEventListener("scroll",()=>{
+        console.log(this.scrollY)
+     
+    if(this.scrollY>1231 && this.scrollY<1608){
+
+        animcFiO.classList.add("fade-in-image")
+        animcFiO.style.opacity=1;
+
+
+    }else if(this.scrollY>=1609&&this.scrollY<=2000){
+        animdFiO.classList.add("fade-in-image")
+        animdFiO.style.opacity=1;
+     }
+
+    })
+
+        
+     
+
+
+  
 })
