@@ -2,6 +2,22 @@ let menu_toggle = document.querySelector(".projet_submenu")
 let hidden_submenu = document.querySelector('.submenu')
 let count = 0;
 let menu_zoom = document.querySelector("header nav ul")
+let link_menu_mobile = document.querySelector(".hidden_menu ul li a")
+
+
+let links_menu_mobile = document.querySelectorAll(".hidden_menu ul li a")
+// for (rows in links_menu_mobile){
+//     rows.addEventListener("click",()=>{
+//         confirm("jhfehj");
+//     })
+// }
+
+
+function toogleMenu(){
+    hidden_menu.classList.toggle("shown_menu")
+
+}
+
 
 menu_toggle.addEventListener('click',()=>{
 
