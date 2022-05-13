@@ -1,174 +1,144 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio O.D</title>
-    <script type="text/jquery" src="./src/jquery.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel=”apple-touch-icon” tailles=”114×114″ href="./Sanstitre-6.jpg">
-    <link rel=”apple-touch-icon" tailles=”72×72″ href="./Sanstitre-6.jpg">
-<link rel=”apple-touch-icon"  href="./Sanstitre-6.jpg">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li class="icone"><a href="#"><input type="checkbox" id="menu_checkbox">
-                    <div class="demo">
-                        <div class="menu-icon">
-                            <input class="menu-icon__cheeckbox" type="checkbox" />
-                            <div>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div></a></li>
-                <li class="desk_li"><a href="">Accueil</a></li>
-                <li  class="desk_li"><a href="">Présentation</a></li>
-                <li  class="desk_li"><a href="">Mes Projets</a></li>
-                <li  class="desk_li"><a href="">Contactez-moi</a></li>
-                <li  class="desk_li"><a href="">À propos</a></li>
-
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <title>Portfolio OD</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <ul class="normal desktop">
+               <li><a href="#">Accueil</a></li>
+               <li><a class="" href="#presentation">Présentation</a></li>
+               <li><a class="projet_submenu" href="#projets">Projets</a>
+                <ul class="submenu">
+                    <li><a href="#">Personnel</a></li>
+                    <li><a href="#">Personnel</a></li>
+                    <li><a href="#">Personnel</a></li>
+    
+                </ul></li>
+               <li><a href="#veille">Veille Tech</a></li>
+               <li><a href="#">Futur..?</a></li>
             </ul>
-            <div class="menu_toggle">
-                <ul>
-                    <li class=""><a href="">Accueil</a></li>
-                    <li  class=""><a href="">Présentation</a></li>
-                    <li  class=""><a href="">Mes Projets</a></li>
-                    <li  class=""><a href="">Contactez-moi</a></li>
-                    <li  class=""><a href="">À propos</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-      <section class="first_block" id="anima">
-            <h1>
-                Bienvenue sur ma page
-            </h1>
-            <h2>
-                Oussama Dabachil
-            </h2>
-
-            <img src="./heightauto.gif" alt="macbook pnh">
-
-        </section>
-
-
-        <section class="first_block" id="animb">
-            <h1>
-                Qui-suis-je?
-            </h1>
        
-
-           
-            <div class="inside_pc">
-                    <p>
-Apprenti dévlopppeur et passionné d'informatique ,je me forme régulièrement sur les nouvelles tendances technologiques . 
-Je me forme chez moi en apprenant des langages tel que Swift , (langage d'Apple) mais aussi j'approfondi les compétences apprises à l'école pour développer des projets à l'extérieur.
-                    <div class="overflow_scroll">
-                        <div class="a">
-                            <img src="./assets/logoswift.png" alt="swift logo">
-                            <h3>Swift</h3>
-                            <ul>
-                                <li>Projets réalisés:</li>
-                                <li>Rappel Islam</li>
-                                <li>DBZ Quizz</li>
-                                <li>Pourquoi ?</li>
-                                <li>Hollyghost | Gestion</li>
-
-                            </ul>
-                        </div>
-                        <div class="a">
-                            <img src="./assets/css-3.png" alt="swift logo">
-
-                            <h3>HTML / CSS / Javascript</h3>
-                            <ul>
-                                <li>Projets réalisés:</li>
-                                <li>Menu (Hollyghost)</li>
-                                <li>Page d'accueil (Hollyghost)</li>
-                                <li>BBH Pièces Auto</li>
-                                <li>Site d'inscrption (Hollyghost)</li>
-
-                            </ul>
-                        </div>
-                     
-                        <div class="a">
-                            <img src="./assets/phpicone.png" alt="swift logo">
-
-                            <h3>PHP</h3>
-                            <ul>
-                                <li>Projets réalisés:</li>
-                                <li>Menu (Hollyghost)</li>
-                                <li>Page d'accueil (Hollyghost)</li>
-                                <li>BBH Pièces Auto</li>
-                                <li>Site d'inscrption (Hollyghost)</li>
-
-                            </ul>
-                        </div>
-                        <div class="a">
-                            <img src="./assets/Java_Logosvg.png" alt="swift logo">
-
-                            <h3>JAVA</h3>
-                            <ul>
-                                <li>Projets réalisés:</li>
-                                <li>Menu (Hollyghost)</li>
-                                <li>Page d'accueil (Hollyghost)</li>
-                                <li>BBH Pièces Auto</li>
-                                <li>Site d'inscrption (Hollyghost)</li>
-
-                            </ul>
-
-                        </div>
-
-                    </div>
+         </nav>
+         <label for="check" class="mobile" >
+            <input type="checkbox" id="check"/> 
+            <span></span>
+            <span></span>
+            <span></span>
 
 
+            <ul class="hidden_menu">
+               <ul>
+                  <li><a href="#">Accueil</a></li>
+                  <li><a class="" href="#presentation">Présentation</a></li>
+                  <li><a class="projet_submenu" href="#projets">Projets</a></li>
+                  <li><a href="#veille">Veille Tech</a></li>
+                  <li><a href="#">Futur..?</a></li>
+               </ul>
+            </ul>
+          </label>
+      </header>
+      <main>
+         <section class="first_part" id="presentation">
+            <h1 class="animate__animated animate__zoomIn">Bienvenue dans mon portfolio</h1>
+            <ul class="animate__slideInUp animate__animated">
+               <li>Apprenti Développeur Web et Applications</li>
+               <li>Oussama DABACHIL</li>
+            </ul>
+            <a href="#projets"><img src="./asset/142051.png" alt=""></a>
+         </section>
+         <section class="second_part">
+            <h1 class="animate__animated animate__zoomIn">Qui suis-je ?</h1>
+            <div class="animate__slideInUp animate__animated" role="complementary">
+               <ul>
+                  <li>Oussama Dabachil</li>
+                  <li>22 ans</li>
+                  <li>BTS SIO SLAM</li>
+                  <li>Apprenti Développeur Web et Applications</li>
+                  <li>Créatif et passionné</li>
+               </ul>
+               <ul>
+                  <li>Hobbies : </li>
+                  <ul>
+                     <li><img src="./asset/logo-github.png" alt=""></li>
+                     <li><img src="./asset/logo-github.png" alt=""></li>
+                     <li><img src="./asset/logo-github.png" alt=""></li>
+                  </ul>
+               </ul>
             </div>
-        </section>
-        <section class="second_block" id="animc">
-            <h1>
-                Mes Applications
-            </h1>
-            <h2>
-                Du temps passé , pour des projets dépassés.
-            </h2>
-            <ul class="grid_ul">
-                <li><a href="./mesapp.html">Voir<i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="">Contactez-moi <i class="fa-solid fa-chevron-right"></i> </a></li>
-            </ul>
+         </section>
+         <section class="third_part" id="projets">
+            <h1 class="animate__animated animate__zoomIn">Mes projets:</h1>
+            <div class="animate__slideInUp animate__animated" role="complementary">
+               <img src="./asset/Logo Hollyghost noir(1).png" alt="">
+               <ul>
+                  <li>Projets professionnels:</li>
+                     <li><a href="#">Application HOLLYGHOST</a></li>
+                     <li><a href="#">Développement du menu mobile</a></li>
+                     <li><a href="#">Développement  d’une page d’inscription</a></li>
+                     <li><a href="#">Développement de la page d'accueil</a></li>
+                  </ul>
+            </div>
+         </section>
+         <section class="fourth_part">
+            <h1 class="animate__animated animate__zoomIn"></h1>
+            <div class="animate__slideInUp animate__animated" role="complementary">
+               <img src="./asset/Capture d’écran 2022-05-11 à 00.01.11.png" alt="">
+               <ul>
+                  <li>Projets scolaires:</li>
+                     <li><a href="#">Page affiche animation jap</a></li>
+                     <li><a href="#">Clone Instagram</a></li>
+                     <li><a href="#">AP Maison des Ligues Weeb</a></li>
+                     <li><a href="#">AP Application Java Maison des ligues</a></li>
+                  </ul>
+            </div>
+         </section>
+         <section class="third_part">
+            <h1 class="animate__animated animate__zoomIn" style="display: none;">Mes projets:</h1>
+            <div class="animate__slideInUp animate__animated" role="complementary">
+               <img src="./asset/projetperso.png" alt="">
+               <ul>
+                  <li>Projets personnelles:</li>
+                     <li><a href="#">Site de garage automobile</a></li>
+                     <li><a href="#">Application Rappel Islam</a></li>
+                     <li><a href="#">Application DBZ Quizz</a></li>
+                     <li><a href="#">Page E-commerce</a></li>
+                  </ul>
+            </div>
+         </section>
+         <section class="third_part" id="veille">
+            <h1 class="animate__animated animate__zoomIn">Veille technologique</h1>
+
+            <figure>
+                <img src="./asset/horizon-worlds.jpeg" alt="">
+                <figcaption>
+                    <h3>LE MÉTAVERSE :</h3>
+                    <p>En quoi est-ce une révolution numérique ?</p>
+                </figcaption>
+            </figure>
+            <!-- <div class="animate__slideInUp animate__animated" role="complementary">
+               <img src="./asset/Logo Hollyghost noir(1).png" alt="">
+               <ul>
+                  <li>Projets :</li>
+                     <li><a href="#">Application HOLLYGHOST</a></li>
+                     <li><a href="#">Développement du menu mobile</a></li>
+                     <li><a href="#">Développement  d’une page d’inscription</a></li>
+                     <li><a href="#">Développement de la page d'accueil</a></li>
+                  </ul>
+            </div> -->
+         </section>
+      </main>
 
 
-            <img src="./MacBook_iphone.png" alt="">
-
-        </section>
-        <section class="second_block" id="animd">
-            <h1>
-                Mes Projets Web
-            </h1>
-            <h2>
-                Le J c'est le S , JS
-                <br>
-            </h2> 
-            <ul class="grid_ul">
-                <li><a href="./mesapp.html">Voir<i class="fa-solid fa-chevron-right"></i></a></li>
-                <li><a href="">Contactez-moi <i class="fa-solid fa-chevron-right"></i> </a></li>
-            </ul>
-
-
-            <img src="./MacBook_iphone-3.png" alt="">
-
-        </section>
-    </main>
-
-
-    <footer>
-        <p>Oussama DABACHIL &copy;</p>
-    </footer>
-    <script src="./src/app.js"></script>
-    <script src="./src/jq.js"></script>
-
-</body>
+      <footer>
+         <p>&copy;Oussama Dabachil</p>
+         <script src="./app/app.js"></script>
+      </footer>
+   </body>
 </html>
